@@ -11,6 +11,7 @@ from typing import List
 client = LlamaCloud(token=os.getenv("LLAMA_CLOUD_API_KEY"))
 
 def create_llama_index(project_id):
+    print(f"Creating Llama Cloud index for project: {project_id} os.getenv: {os.getenv('LLAMA_CLOUD_API_KEY')}")
     embedding_config = {
         'type': 'OPENAI_EMBEDDING',
         'component': {
